@@ -1,1 +1,80 @@
-<p>teste 2 </p>
+<style>
+    .panel-collapse-in {
+
+        overflow: visible;
+
+    }
+
+    label input[type="checkbox"] {
+        display: none;
+    }
+
+    label h4 {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .collapse {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.8s;
+    }
+
+    input:checked+.collapse {
+        height: 200px;
+    }
+</style>
+
+<div class="container-fluid">
+    <!-- ATENÇÃO - substituir trecho entre chaves [] com valor correspondente -->
+    <h4></h4>
+    <h4 style="text-align: center; ">Relação de processos publicados em dezembro de 2022</h4>
+    <p> </p>
+    <div class="panel-group" id="accordion">
+        <!-- painel da sessão / guia -->
+        <div class="panel panel-default">
+            <div class="panel-heading" id="heading4">
+                <h3 class="panel-title"><a class="collapsed" href="#collapse404" data-toggle="collapse"
+                        data-parent="#accordion">SESSÃO 000º | GUIA 00000000000</a></h3>
+            </div>
+            <!-- painel colapsado - adicionar classe in para deixar expandido -->
+            <div class="panel-collapse-in" id="collapse404">
+                <div class="panel-body">
+                    <!-- Relação de processos -->
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Processo</th>
+                                <th>Recorrente</th>
+                                <th>Advogado</th>
+                                <th>Relator</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- EXEMPLO - FAVOR PREENCHER COM OS DADOS DO PROCESSO -->
+                            <tr>
+                                <td><a href="link aqui" target="_blank">00000000000000000</a></td>
+                                <td>EMPRESA</td>
+                                <td>-</td>
+                                <td>ADVOGADO PROCON</td>
+                            </tr>
+                            <!-- EXEMPLO - FAVOR PREENCHER COM OS DADOS DO PROCESSO -->
+                            <tr>
+                                <td><a href="link aqui" target="_blank">00000000000000000</a></td>
+                                <td>EMPRESA AQUI</td>
+                                <td>-</td>
+                                <td>ADVOGADO PROCON</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Fonte: Procon-PB 1ª Câmara Recursal</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br /> <!-- Guia seguinte // -->
+    </div>
+</div>
